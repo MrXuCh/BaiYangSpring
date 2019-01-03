@@ -10,7 +10,7 @@ public class TicketController {
 	@Autowired
 	private TicketServiceImpl ticketService;
 
-	@RequestMapping("/")
+	@RequestMapping("/demo")
 	public String index() {
 		return ticketService.buyTicket();
 	}

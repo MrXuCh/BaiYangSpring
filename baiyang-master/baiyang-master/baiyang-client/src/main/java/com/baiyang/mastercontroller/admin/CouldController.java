@@ -13,7 +13,7 @@ public class CouldController {
 
 	@RequestMapping("/")
 	public String index(){
-		String result = restTemplate.getForObject("http://serviceImpl/", String.class);
+		String result = restTemplate.getForObject("http://serviceImpl/demo", String.class);
 
 		return result;
 	}
